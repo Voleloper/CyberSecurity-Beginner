@@ -1,0 +1,210 @@
+# 🔴 Red Teaming – Beginner Guide
+
+This repository is a beginner-friendly introduction to Red Teaming.
+
+Goal:  
+Understand how real adversaries operate and learn the foundational skills required for red team operations.
+
+No experience required — but curiosity is mandatory.
+
+---
+
+## 🎯 What is Red Teaming?
+
+Red Teaming is the simulation of real-world attackers.
+
+Unlike basic penetration testing, red teaming focuses on:
+
+- stealth
+- persistence
+- adversary behavior
+- long-term access
+- detection evasion
+- realistic attack chains
+
+A red team does not just find vulnerabilities.  
+A red team behaves like an attacker.
+
+---
+
+## 🧠 Core Red Team Skills
+
+A beginner red teamer must build strong fundamentals:
+
+✅ Linux mastery  
+✅ Networking knowledge  
+✅ Windows internals  
+✅ Active Directory basics  
+✅ Scripting (Bash / Python / PowerShell)  
+✅ Operating system security  
+✅ Web fundamentals  
+✅ Problem-solving mindset  
+
+Tools come after understanding.
+
+---
+
+## ⚡ Red Team Attack Lifecycle
+
+Real red team operations follow phases.
+
+---
+
+### 1. Reconnaissance
+
+Gather external intelligence.
+
+```
+nmap -sC -sV <target>
+whois <domain>
+dig <domain>
+gobuster dir -u http://target -w wordlist.txt
+```
+
+Goal: map the environment.
+
+---
+
+### 2. Initial Access
+
+Find an entry point.
+
+```
+hydra ssh://target
+sqlmap -u "URL"
+searchsploit <service>
+msfconsole
+```
+
+Goal: foothold in the system.
+
+---
+
+### 3. Privilege Escalation
+
+Increase access level.
+
+```
+sudo -l
+find / -perm -4000 2>/dev/null
+linpeas.sh
+```
+
+Goal: user → administrator/root.
+
+---
+
+### 4. Persistence
+
+Maintain access over time.
+
+```
+crontab -e
+authorized_keys modification
+user creation
+```
+
+Goal: survive reboots and detection.
+
+---
+
+### 5. Lateral Movement
+
+Move inside the network.
+
+```
+ssh user@internal-ip
+proxychains nmap <internal-range>
+scp payload host:/tmp
+```
+
+Goal: expand control.
+
+---
+
+### 6. Data Exfiltration
+
+Extract valuable information quietly.
+
+Goal: simulate real attacker impact.
+
+---
+
+## 🧰 Beginner Red Team Tools
+
+```
+nmap        → reconnaissance
+metasploit  → exploitation framework
+burpsuite   → web attacks
+hydra       → credential attacks
+gobuster    → discovery
+impacket    → AD/network attacks
+wireshark   → traffic inspection
+```
+
+Tools assist — mindset wins.
+
+---
+
+## 🧪 Safe Practice Environment
+
+Red teaming must be practiced legally.
+
+Recommended:
+
+- home lab (virtual machines)
+- intentionally vulnerable systems
+- security lab platforms
+- CTF environments
+
+Never attack real systems without permission.
+
+---
+
+## 🧠 Beginner Strategy
+
+1. Master Linux terminal
+2. Learn networking deeply
+3. Understand Windows & Active Directory
+4. Practice privilege escalation
+5. Break lab machines
+6. Read red team writeups
+7. Repeat constantly
+
+Skill is built through repetition.
+
+---
+
+## 🎯 Beginner Milestones
+
+You are progressing if you can:
+
+✅ gain initial access  
+✅ escalate privileges  
+✅ maintain persistence  
+✅ pivot to another system  
+✅ explain the attack chain  
+
+Understanding > tool usage.
+
+---
+
+## 🔥 Red Team Mindset
+
+Think like an attacker:
+
+- assume misconfiguration
+- trust nothing
+- enumerate everything
+- chain small weaknesses
+- stay quiet
+- persist access
+
+Patience is a weapon.
+
+---
+
+## ⚠️ Legal Disclaimer
+
+For educational and authorized testing only.
+Unauthorized access is illegal.

@@ -1,0 +1,184 @@
+🧠 Hack The Box Beginner Roadmap
+
+This step-by-step roadmap helps beginners start Hack The Box (HTB) efficiently and build real penetration testing skills without getting stuck early.
+
+🎯 Step 1 — Prepare Your Environment
+
+Before starting machines, set up your lab properly.
+
+✅ What You Need
+
+VPN connection (HTB OpenVPN)
+
+Kali Linux (recommended)
+
+Stable internet connection
+
+Note-taking system (VERY important)
+
+Recommended setup:
+
+Use a dedicated Kali VM
+
+Keep your tools updated
+
+Create a notes folder per machine
+
+💡 HTB is harder than TryHackMe — preparation matters.
+
+🟢 Step 2 — Start With HTB Academy (Strongly Recommended)
+
+If you're new, don’t jump directly into boxes.
+
+👉 Start with HTB Academy modules.
+
+✅ Beginner Modules
+
+Introduction to Academy
+
+Linux Fundamentals
+
+Networking Fundamentals
+
+Web Requests
+
+Introduction to Bash
+
+Information Gathering
+
+Goal: Build the technical foundation needed for real boxes.
+
+🔍 Step 3 — Learn Enumeration Deeply
+
+Enumeration is the #1 skill on Hack The Box.
+
+🔥 Core Commands to Master
+nmap -sC -sV -p- <target>
+gobuster dir -u http://<target> -w wordlist.txt
+ffuf -u http://<target>/FUZZ -w wordlist.txt
+enum4linux -a <target>
+
+
+Focus areas:
+
+Port scanning
+
+Service fingerprinting
+
+Directory brute forcing
+
+SMB enumeration
+
+Web tech identification
+
+🎯 On HTB, most failures = poor enumeration.
+
+💻 Step 4 — Start With Very Easy Boxes
+
+Do NOT start with random machines.
+
+✅ Good Beginner Boxes
+
+Meow
+
+Fawn
+
+Dancing
+
+Appointment
+
+Sequel
+
+Explosion
+
+These are designed for beginners.
+
+What to practice:
+
+Foothold discovery
+
+Basic exploitation
+
+Privilege escalation
+
+Proper methodology
+
+⏱️ Spend time thinking before reading writeups.
+
+🧪 Step 5 — Follow a Structured Box Methodology
+
+For every machine, follow this workflow:
+
+🔄 Standard HTB Workflow
+
+Initial Nmap scan
+
+Service enumeration
+
+Web enumeration (if HTTP)
+
+Foothold exploitation
+
+Local enumeration
+
+Privilege escalation
+
+Proof capture
+
+Write notes
+
+💡 Discipline beats tool spam.
+
+🔴 Step 6 — Move to Easy → Medium Boxes
+
+After finishing several very easy boxes:
+
+👉 Progress gradually:
+
+Very Easy → Easy → Medium
+
+Do NOT rush Medium boxes.
+
+You are ready when:
+
+Enumeration feels natural
+
+You rarely miss open services
+
+You understand why exploits work
+
+🧰 Essential Tools for HTB Beginners
+
+Master these first:
+
+Nmap
+
+Gobuster / FFUF
+
+Burp Suite
+
+Netcat
+
+LinPEAS / WinPEAS
+
+Metasploit (basic usage)
+
+⚠️ Depth > quantity.
+
+📓 Step 7 — Take Professional Notes
+
+For each box, document:
+
+Open ports
+
+Services
+
+Vulnerabilities
+
+Exploitation steps
+
+Privilege escalation path
+
+Lessons learned
+
+Your future self will thank you.

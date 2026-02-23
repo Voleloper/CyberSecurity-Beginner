@@ -1,0 +1,231 @@
+# 🧪 Beginner Practice Guide – Red Team / Pentesting
+
+This guide answers 3 critical beginner questions:
+
+- Which tools should I practice?
+- What should I practice with them?
+- Which commands must I know?
+
+Goal: build real hands-on skill, not tool memorization.
+
+---
+
+## 🎯 Practice Philosophy
+
+Do NOT try to learn 50 tools.
+
+Learn 5 tools deeply.
+
+Skill comes from repetition, not variety.
+
+Every practice session should follow:
+
+scan → enumerate → exploit → escalate → understand
+
+---
+
+## 🔍 1. Nmap – Network Scanning Practice
+
+Nmap is your most important tool.
+
+### What to practice
+
+- finding open ports
+- identifying services
+- reading scan results
+- detecting attack surface
+
+### Commands you must know
+
+```
+nmap <target>
+nmap -sC -sV <target>
+nmap -p- <target>
+nmap -A <target>
+nmap -T4 <target>
+nmap --script vuln <target>
+```
+
+### Practice exercises
+
+- scan your own VM
+- scan lab machines
+- compare fast vs full scans
+- interpret service versions
+- guess possible exploits
+
+Goal: read nmap output like a story.
+
+---
+
+## 🌐 2. Gobuster – Directory Discovery Practice
+
+Used for web reconnaissance.
+
+### What to practice
+
+- discovering hidden directories
+- wordlist usage
+- interpreting HTTP responses
+
+### Commands
+
+```
+gobuster dir -u http://target -w wordlist.txt
+gobuster dir -x php,txt,html -u http://target -w wordlist.txt
+```
+
+### Practice exercises
+
+- find hidden admin panels
+- discover backup files
+- analyze response codes
+- map website structure
+
+Goal: think like a web attacker.
+
+---
+
+## 🔐 3. Hydra – Password Attack Practice
+
+Learn authentication weaknesses.
+
+### What to practice
+
+- brute force logic
+- login behavior
+- credential testing
+
+### Commands
+
+```
+hydra -l admin -P passwords.txt ssh://target
+hydra -L users.txt -P passwords.txt ftp://target
+hydra -t 4 -V ssh://target
+```
+
+### Practice exercises
+
+- attack a test SSH service
+- simulate weak password policies
+- observe lockout behavior
+
+Goal: understand authentication risk.
+
+---
+
+## 🧰 4. Metasploit – Exploitation Practice
+
+Framework for structured exploitation.
+
+### What to practice
+
+- searching exploits
+- configuring payloads
+- managing sessions
+
+### Commands
+
+```
+msfconsole
+search <service>
+use <exploit>
+show options
+set RHOST <target>
+set LHOST <your-ip>
+run
+sessions
+```
+
+### Practice exercises
+
+- exploit vulnerable machines
+- open reverse shells
+- interact with sessions
+- background sessions
+
+Goal: understand exploitation workflow.
+
+---
+
+## 🧠 5. Linux Privilege Escalation Practice
+
+Critical real-world skill.
+
+### What to practice
+
+- weak permissions
+- SUID binaries
+- sudo misconfigurations
+- writable files
+
+### Commands
+
+```
+sudo -l
+find / -perm -4000 2>/dev/null
+cat /etc/passwd
+linpeas.sh
+```
+
+### Practice exercises
+
+- escalate from user → root
+- analyze permissions
+- find misconfigured services
+
+Goal: turn small access into full control.
+
+---
+
+## 🧪 How to Practice Safely
+
+You must use legal environments.
+
+Recommended setup:
+
+- virtual machine lab
+- local vulnerable machines
+- CTF-style challenges
+- intentionally insecure systems
+
+Never attack random internet targets.
+
+---
+
+## 🔁 Daily Practice Routine
+
+Beginner training loop:
+
+1. Scan a machine
+2. Enumerate services
+3. Find a vulnerability
+4. Exploit it
+5. Escalate privileges
+6. Document what happened
+
+Repeat daily.
+
+Consistency builds skill.
+
+---
+
+## 🎯 Beginner Milestone Checklist
+
+You are improving if you can:
+
+✅ read nmap output confidently  
+✅ discover hidden web paths  
+✅ brute force a weak login  
+✅ exploit a vulnerability  
+✅ escalate privileges  
+✅ explain the attack chain  
+
+Understanding > tool usage.
+
+---
+
+## ⚠️ Legal Notice
+
+For educational and authorized testing only.
+Unauthorized access is illegal.

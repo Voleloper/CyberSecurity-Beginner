@@ -1,0 +1,205 @@
+# 🔴 Penetration Testing – Beginner Guide
+
+This repository is a beginner-friendly introduction to penetration testing.
+
+Goal:  
+Understand how ethical hackers test systems and learn the core skills required to become a penetration tester.
+
+No prior experience required.  
+Technical, practical, and beginner accessible.
+
+---
+
+## 🎯 What is a Penetration Tester?
+
+A penetration tester (ethical hacker) simulates real-world attacks to find security weaknesses before malicious attackers do.
+
+A pentester:
+
+- finds vulnerabilities
+- exploits misconfigurations
+- tests defenses
+- reports risks
+- helps organizations improve security
+
+The job is not “hacking for fun” —  
+it is structured, legal, and professional security testing.
+
+---
+
+## 🧠 Core Skills You Must Learn
+
+A good penetration tester understands:
+
+✅ Linux  
+✅ Networking fundamentals  
+✅ Web technologies  
+✅ Operating systems  
+✅ Scripting basics  
+✅ Security tools  
+✅ Problem solving  
+
+Tools are secondary.  
+Understanding systems is primary.
+
+---
+
+## ⚡ The Penetration Testing Workflow
+
+Every pentest follows a structured methodology.
+
+### 1. Reconnaissance
+
+Gather information about the target.
+
+```
+nmap <target>
+whois <domain>
+dig <domain>
+gobuster dir -u http://target -w wordlist.txt
+```
+
+Goal: map the attack surface.
+
+---
+
+### 2. Enumeration
+
+Extract deeper information from services.
+
+```
+nmap -sC -sV <target>
+enum4linux <target>
+nikto -h http://target
+```
+
+Goal: identify weaknesses.
+
+---
+
+### 3. Exploitation
+
+Use vulnerabilities to gain access.
+
+```
+searchsploit <service>
+msfconsole
+sqlmap -u "URL" --dbs
+hydra -l admin -P passwords.txt ssh://target
+```
+
+Goal: prove the vulnerability is real.
+
+---
+
+### 4. Privilege Escalation
+
+Gain higher access after initial compromise.
+
+```
+sudo -l
+find / -perm -4000 2>/dev/null
+linpeas.sh
+```
+
+Goal: move from user → root/admin.
+
+---
+
+### 5. Post-Exploitation
+
+Maintain access and analyze the system.
+
+```
+cat /etc/passwd
+history
+crontab -l
+```
+
+Goal: understand the impact.
+
+---
+
+## 🧰 Essential Beginner Tools
+
+```
+nmap        → network scanning
+burpsuite   → web testing
+nikto       → web vulnerabilities
+gobuster    → directory discovery
+hydra       → brute force testing
+metasploit  → exploitation framework
+wireshark   → network analysis
+```
+
+Tools help — but mindset matters more.
+
+---
+
+## 🧪 Practice Platforms
+
+You must practice in safe environments.
+
+Recommended:
+
+- virtual machines
+- home lab
+- CTF challenges
+- security labs
+- vulnerable machines
+
+Reading alone does not create skill.  
+Hands-on work does.
+
+---
+
+## 🧠 Beginner Learning Strategy
+
+1. Learn Linux first
+2. Learn networking basics
+3. Understand how web apps work
+4. Practice scanning and enumeration
+5. Break systems in labs
+6. Read writeups
+7. Repeat
+
+Consistency beats intensity.
+
+---
+
+## 🎯 Realistic Expectations
+
+Penetration testing is hard.
+
+You will:
+
+- fail often
+- get stuck
+- feel confused
+- learn slowly
+
+This is normal.
+
+Skill grows with time, not shortcuts.
+
+---
+
+## 🔥 Beginner Milestones
+
+If you can:
+
+✅ scan a machine  
+✅ find open services  
+✅ exploit a basic vulnerability  
+✅ escalate privileges  
+✅ explain what happened  
+
+You are on the right path.
+
+---
+
+## ⚠️ Legal Disclaimer
+
+For educational purposes only.  
+Only test systems you own or have permission to test.
+Unauthorized access is illegal.

@@ -15,7 +15,7 @@ Focused on terminal mastery, offensive security, defensive security, and automat
 
 ## 📌 Overview
 
-1- FİRST HARVARD UNIVERSITY CS50's Introduction to Cybersecurity Watch and take notes. -- 
+1- FİRST HARVARD UNIVERSITY CS50's Introduction to Cybersecurity Watch and take notes. -- https://github.com/Voleloper/CyberSecurity-Beginner/blob/main/Harvard%20University%20Cybersecurity
 
 2- REGISTER TRYHACKME AND HACKTHEBOX FIRST TRYHACKME SECOND HACKTHEBOX(First, select the tryhackme file above and start from there, then select hackthebox)
 

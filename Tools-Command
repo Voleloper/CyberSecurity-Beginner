@@ -1,0 +1,140 @@
+## ⚡ Most Used Commands – Security Tool Cheat Sheet
+
+### 🔍 Nmap
+
+```
+nmap <target>
+nmap -sV <target>
+nmap -sC <target>
+nmap -A <target>
+nmap -p- <target>
+nmap -T4 -A -v <target>
+nmap --script vuln <target>
+```
+
+---
+
+### 💣 Metasploit
+
+```
+msfconsole
+search <exploit>
+use <exploit>
+show options
+set RHOST <ip>
+set LHOST <ip>
+run / exploit
+sessions
+background
+```
+
+---
+
+### 🧪 SQLMap
+
+```
+sqlmap -u "URL" --dbs
+sqlmap -u "URL" -D <db> --tables
+sqlmap -u "URL" -D <db> -T <table> --dump
+sqlmap -u "URL" --batch --risk=3 --level=5
+```
+
+---
+
+### 🌐 Gobuster
+
+```
+gobuster dir -u http://target -w wordlist.txt
+gobuster dns -d domain.com -w wordlist.txt
+gobuster vhost -u http://target -w wordlist.txt
+```
+
+---
+
+### 🧰 Nikto
+
+```
+nikto -h http://target
+nikto -h http://target -Tuning x
+nikto -h http://target -output scan.txt
+```
+
+---
+
+### 🔐 Hydra
+
+```
+hydra -l admin -P passwords.txt ssh://target
+hydra -L users.txt -P passwords.txt ftp://target
+hydra -t 4 -V ssh://target
+```
+
+---
+
+### 🔓 John the Ripper
+
+```
+john hash.txt
+john --wordlist=rockyou.txt hash.txt
+john --show hash.txt
+```
+
+---
+
+### ⚡ Hashcat
+
+```
+hashcat -m 0 hash.txt wordlist.txt
+hashcat -a 0 -m 1000 hash.txt wordlist.txt
+hashcat --show hash.txt
+```
+
+---
+
+### 📡 Tcpdump
+
+```
+tcpdump -i eth0
+tcpdump -i eth0 port 80
+tcpdump -i eth0 host <ip>
+tcpdump -w capture.pcap
+tcpdump -r capture.pcap
+```
+
+---
+
+### 🧠 Wireshark (CLI)
+
+```
+tshark
+tshark -i eth0
+tshark -r file.pcap
+tshark -Y http
+```
+
+---
+
+### 🧬 Searchsploit
+
+```
+searchsploit <service>
+searchsploit apache
+searchsploit -m <exploit>
+```
+
+---
+
+### 🧪 Binwalk
+
+```
+binwalk file.bin
+binwalk -e file.bin
+binwalk --dd='.*' file.bin
+```
+
+---
+
+## ⚠️ Disclaimer
+
+This repository is for educational and ethical security research only.
+Use these tools responsibly and legally.

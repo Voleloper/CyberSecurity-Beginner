@@ -25,7 +25,7 @@ Focused on terminal mastery, offensive security, defensive security, and automat
 
 5- MAC OS UTM KALI LINUX = WATCH TO VIDEO https://www.youtube.com/watch?v=U09soewiu18
 
-6- LINUX COMMAND LEARNING Linux Commands for Cyber Security Beginners https://github.com/Voleloper/CyberSecurity-Start/blob/main/Linux%20Commands%20for%20Cyber%20Security%20Beginners
+6- LINUX COMMAND LEARNING Linux Commands for Cyber Security Beginners https://github.com/Voleloper/CyberSecurity-Beginner/blob/main/Linux%20Commands%20for%20Cyber%20Security%20Beginners
 
 
 Linux is the foundation of modern cyber security operations.  

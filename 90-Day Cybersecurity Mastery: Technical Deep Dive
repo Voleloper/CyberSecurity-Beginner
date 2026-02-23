@@ -1,0 +1,103 @@
+🛡️ 90-Day Cybersecurity Mastery: Technical Deep Dive
+Level: Intermediate to Advanced
+
+Goal: Transition from a "tool-user" to a "Security Researcher/Pentester" with 100% success orientation.
+
+Core Pillars: System Internals, Advanced Scripting, Binary Exploitation, and Active Directory Red Teaming.
+
+🏗️ Phase 1: Systems & Architecture (Days 1-30)
+Focus: Mastering the environment before attacking it.
+
+Week 1: Advanced Linux Administration
+
+Days 1-3: Internal Hierarchy: Kernel vs. User Space, Init systems (systemd), Shared Libraries (ldd), and Environment Variables.
+
+Days 4-5: Permission Deep Dive: SUID/SGID bits, Capabilities (getcap/setcap), and /etc/shadow hash structures.
+
+Days 6-7: Networking Mastery: iptables rules, nftables, static routing, and network namespaces for isolation.
+
+Week 2: Low-Level Networking & Traffic Analysis
+
+Days 8-10: TCP/IP Internals: IP fragmentation, TCP segmentation, TTL manipulation, and ICMP type analysis.
+
+Days 11-13: Advanced Wireshark: Using display filters for threat hunting, extracting files from streams, and analyzing C2 (Command & Control) traffic.
+
+Day 14: Pivoting Foundations: SSH Tunneling, Local/Remote/Dynamic Port Forwarding (Proxychains).
+
+Week 3: Security Scripting (Python & Go)
+
+Days 15-17: Python for Offense: Build a multithreaded Port Scanner and a Scapy-based ARP Spoofer.
+
+Days 18-20: Go for Security: Understanding static binaries and concurrency. Build a "Subdomain Enumerator" or a "Directory Brute-forcer."
+
+Day 21: Automation: Interacting with REST APIs for automated OSINT and vulnerability scanning.
+
+Week 4: Windows Internals & PowerUser Skills
+
+Days 22-24: Windows Core: Processes, Threads, Handles, DLL Injection concepts, and the Windows Registry.
+
+Days 25-27: Active Directory 101: NTDS.dit, Kerberos flow (AS-REQ, TGS, TGT), and LDAP queries.
+
+Days 28-30: PowerShell for Pentesters: Bypassing Execution Policies, using Invoke-Expression, and PowerShell Remoting (WinRM).
+
+🛠️ Phase 2: Vulnerability Analysis & Exploitation (Days 31-60)
+Focus: Finding flaws and weaponizing them.
+
+Week 5: Advanced Web Hacking
+
+Days 31-33: SSRF & XXE: Server-Side Request Forgery and XML External Entity exploitation.
+
+Days 34-35: Insecure Deserialization: Exploiting object serialization in Java/PHP/Python for RCE.
+
+Days 36-37: Logic Flaws: IDOR (Insecure Direct Object Reference) and Race Conditions in business logic.
+
+Week 6: Binary Exploitation (Exploit Dev)
+
+Days 38-40: Assembly (x86/x64): Learning the Stack, Heap, and Registers (EAX, ESP, EIP).
+
+Days 41-44: Stack-Based Buffer Overflow: Using GDB or Immunity Debugger to control EIP, find JMP ESP, and execute shellcode.
+
+Week 7: Active Directory Red Teaming
+
+Days 45-47: Initial Access: LLMNR/NBT-NS Poisoning (Responder), Password Spraying, and SMB Relay attacks.
+
+Days 48-50: Lateral Movement: Pass-the-Hash (PtH), Pass-the-Ticket (PtT), and Overpass-the-Hash via Mimikatz.
+
+Day 51: Domain Persistence: Golden Ticket and Silver Ticket creation.
+
+Week 8: Privilege Escalation (The Art of Escalation)
+
+Days 52-54: Linux PrivEsc: Wildcard exploitation, PATH hijacking, Cron Job abuse, and Kernel exploits.
+
+Days 55-57: Windows PrivEsc: Unquoted Service Paths, Token Manipulation, and Potato-style (PrintSpoofer) exploits.
+
+Days 58-60: Post-Exploitation: Credential harvesting, pillaging sensitive files, and Data Exfiltration.
+
+🚀 Phase 3: Defensive Ops, Labs & Professionalism (Days 61-90)
+Focus: Blue teaming, certification readiness, and career building.
+
+Week 9: Offensive Labs (CTF Marathon)
+
+Days 61-67: Solve 5 "Hard" machines on HackTheBox or Proving Grounds. Write a professional "Vulnerability Assessment Report" for each.
+
+Week 10: Cloud & Modern Infra
+
+Days 68-70: Cloud Security: AWS/Azure S3 Bucket misconfigurations and IAM Role abuse.
+
+Days 71-74: Container Security: Docker escapes and Kubernetes (K8s) misconfiguration audits.
+
+Week 11: Blue Team & Threat Hunting
+
+Days 75-77: SIEM Analysis: Using ELK Stack or Splunk to detect the attacks you performed in Phase 2.
+
+Days 78-80: Detection Engineering: Write YARA rules for malware and Sigma rules for SIEM alerts.
+
+Day 81: Incident Response: Basics of Digital Forensics and Log correlation.
+
+Week 12: Professional Polish & Certification
+
+Days 82-85: Portfolio Finalization: Publish your "Pentest Toolbox" on GitHub. Share PoCs for CVEs you studied.
+
+Days 86-88: 24-Hour Mock Exam: Simulate an OSCP/PNPT exam by attempting 5 machines in one sitting.
+
+Days 89-90: Career Readiness: Technical Resume (CV) optimization and LinkedIn networking with industry experts.

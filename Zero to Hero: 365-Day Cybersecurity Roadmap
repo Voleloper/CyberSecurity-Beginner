@@ -1,0 +1,141 @@
+# 🛡️ Zero to Hero: 365-Day Cybersecurity Roadmap
+
+**Goal:** Transform from a complete beginner to a job-ready Junior Penetration Tester / Security Analyst in 12 months.
+**Focus:** Hands-on technical skills, Offensive Security (Red Team), Defensive Basics (Blue Team), and Scripting.
+**Motto:** "Try Harder."
+
+---
+
+## 📅 Quarter 1: The Foundation (Months 1-3)
+*Building the bedrock. You cannot hack what you do not understand.*
+
+### 🟢 Month 1: Networking Mastery
+The internet is just a giant network. Master how data moves.
+- [ ] **Study the OSI Model:** Memorize all 7 layers. Understand data encapsulation.
+- [ ] **TCP/IP Protocol Suite:** deeply understand TCP vs UDP, Three-way handshake.
+- [ ] **IP Addressing:** Learn IPv4, IPv6, CIDR notation, and Subnetting (Do not skip Subnetting!).
+- [ ] **Common Ports & Protocols:** SSH (22), DNS (53), HTTP/S (80/443), SMB (445), RDP (3389).
+- [ ] **Lab:** Download **Cisco Packet Tracer** and build a small office network (Router, Switch, PC).
+- [ ] **Tool:** Master **Wireshark**. Capture packets on your home network and analyze a TCP handshake.
+
+### 🟢 Month 2: Operating Systems (Linux & Windows)
+Hackers live in the terminal.
+- [ ] **Virtualization:** Install VirtualBox or VMware. Set up a **Kali Linux** VM and a **Windows 10** VM.
+- [ ] **Linux CLI Mastery:**
+  - [ ] Navigation (`cd`, `ls`, `pwd`)
+  - [ ] File Management (`cp`, `mv`, `rm`, `cat`, `nano/vim`)
+  - [ ] Permissions (`chmod`, `chown`, `chgrp`)
+  - [ ] Process Management (`ps`, `top`, `kill`)
+  - [ ] Text Manipulation (`grep`, `awk`, `sed`, `pipes |`)
+- [ ] **Windows Internals:** Understand the Registry, Services, and basic CMD/PowerShell commands.
+- [ ] **Resource:** *Linux Basics for Hackers* (Book or equivalent course).
+
+### 🟢 Month 3: Coding & Security Logic
+Stop using tools; start building them.
+- [ ] **Python for Security:** Learn variables, loops, functions, and libraries (`requests`, `socket`).
+- [ ] **Bash Scripting:** Automate simple Linux tasks.
+- [ ] **Project:** Write a simple **Port Scanner** in Python (Do not use Nmap, code it yourself using `socket`).
+- [ ] **Concepts:** Learn CIA Triad, AAA, Encryption (Symmetric vs Asymmetric), Hashing.
+
+---
+
+## 📅 Quarter 2: The Art of Attack (Months 4-6)
+*Learning how to break systems and find vulnerabilities.*
+
+### 🟡 Month 4: Web Application Security
+The most common attack surface.
+- [ ] **OWASP Top 10:** deeply understand the top vulnerabilities (SQLi, XSS, IDOR, Broken Access Control).
+- [ ] **HTTP Protocol:** Understand Headers, Cookies, Sessions, GET vs POST.
+- [ ] **Tool:** **Burp Suite**. Master the Proxy, Repeater, and Intruder tabs.
+- [ ] **Labs:** Complete the Apprentice level labs on **PortSwigger Web Security Academy** (Free).
+
+### 🟡 Month 5: Network Scanning & Enumeration
+Gathering information before the attack.
+- [ ] **Nmap:** Master flags (`-sC`, `-sV`, `-p-`, `-O`). Learn NSE (Nmap Scripting Engine).
+- [ ] **Vulnerability Assessment:** Understand CVSS scores.
+- [ ] **Metasploit Framework:** Learn search, use, set RHOSTS/LHOSTS, exploit, payloads (staged vs stageless).
+- [ ] **Brute Forcing:** Learn **Hydra** and **John the Ripper**.
+- [ ] **Platform:** Start the "Pre-Security" and "Jr. Penetration Tester" paths on **TryHackMe**.
+
+### 🟡 Month 6: Privilege Escalation
+You are in. Now become God (Root/Admin).
+- [ ] **Reverse Shells:** Understand how to catch a shell with Netcat (`nc -lvnp`).
+- [ ] **Linux PrivEsc:** SUID binaries, Kernel exploits, Cron jobs. (Tool: **LinPEAS**).
+- [ ] **Windows PrivEsc:** Unquoted Service Paths, Token Impersonation. (Tool: **WinPEAS**).
+- [ ] **Transferring Files:** Learn how to move files to a victim machine using Python http server, wget, certutil.
+
+---
+
+## 📅 Quarter 3: Advanced & Corporate Environments (Months 7-9)
+*Moving from CTFs to real-world corporate networks.*
+
+### 🔴 Month 7: Active Directory (The Big Boss)
+90% of Fortune 500 companies use AD. You must know it.
+- [ ] **Architecture:** Domain Controllers, Forests, Trees, Users, Groups, Policies (GPO).
+- [ ] **Attacks:** Kerberoasting, AS-REP Roasting, LLMNR Poisoning (Responder), Pass-the-Hash.
+- [ ] **Tools:** **BloodHound** (Mapping the AD), **Mimikatz** (Dumping credentials), **Impacket**.
+- [ ] **Lab:** Build a Windows Server AD Lab on your machine and hack it.
+
+### 🔴 Month 8: Blue Team Basics & Evasion
+Know your enemy (The Defenders).
+- [ ] **Logs:** How to read Windows Event Logs and Linux Syslogs.
+- [ ] **SIEM:** Understand what Splunk/ELK does.
+- [ ] **Firewalls/IDS:** How to evade basic detection (modifying payloads, changing user-agents).
+- [ ] **Analysis:** Use VirusTotal and Hybrid Analysis to check malware signatures.
+
+### 🔴 Month 9: Hands-on Intensive (The Grind)
+Stop reading, start hacking.
+- [ ] **Platform:** **HackTheBox (HTB)**.
+- [ ] **Goal:** Root 20 machines (Start with Easy, move to Medium).
+- [ ] **Documentation:** Write a detailed "Write-up" for every machine you solve. Save these in a folder; this is your portfolio.
+
+---
+
+## 📅 Quarter 4: Career & Certification (Months 10-12)
+*Proving your skills and getting hired.*
+
+### 🔵 Month 10: Certification Prep
+Get the HR filter bypass.
+- [ ] **Target:** **eJPTv2** (eLearnSecurity Junior Penetration Tester) - Highly recommended for beginners.
+- [ ] **Stretch Goal:** **OSCP** (Offensive Security Certified Professional) - The Gold Standard (Hard).
+- [ ] **Focus:** Dedicate this month entirely to the course material and labs of your chosen certification.
+
+### 🔵 Month 11: Bug Bounty & Real World
+- [ ] **Platforms:** Sign up for **HackerOne** or **Bugcrowd**.
+- [ ] **Practice:** Look for VDP (Vulnerability Disclosure Programs) that allow safe testing.
+- [ ] **Report Writing:** Learn to write professional reports. Impact > Technical Complexity. Explain *why* the bug matters to the business.
+
+### 🔵 Month 12: The Job Hunt
+- [ ] **GitHub Polish:** clean up your repos, pin your Python tools and CTF write-ups.
+- [ ] **LinkedIn:** Optimize profile. Title: "Cybersecurity Researcher" or "Aspiring Penetration Tester". Connect with the community.
+- [ ] **Mock Interviews:** Prepare for technical questions (e.g., "Explain the XSS to a 5-year-old," "What happens when you type google.com?").
+- [ ] **Apply:** Apply to SOC Analyst L1, Junior Pentester, or IT Security Administrator roles.
+
+---
+
+## 📚 Essential Resources
+
+### Platforms
+* **TryHackMe:** Best for guided learning.
+* **HackTheBox:** Best for unguided practice.
+* **PortSwigger Academy:** The Bible of Web Security.
+
+### YouTube Channels
+* NetworkChuck
+* The Cyber Mentor (TCM)
+* IppSec (Watch him solve HTB boxes)
+* John Hammond
+
+### Tools to Master
+`Nmap`, `Burp Suite`, `Metasploit`, `Wireshark`, `Netcat`, `Gobuster/Dirb`, `Hydra`, `Hashcat`, `BloodHound`.
+
+---
+
+## 🏆 Rules of Success
+
+1.  **Google Dorking:** If you are stuck, search for 15 minutes before asking for help. Google is a skill.
+2.  **Take Notes:** Use **Obsidian** or **Notion**. If you don't document it, you didn't learn it.
+3.  **Consistency:** 1 hour every day is better than 10 hours on Sunday.
+4.  **Ethics:** Never touch a system you do not have permission to test. Jail is not part of the roadmap.
+
+***

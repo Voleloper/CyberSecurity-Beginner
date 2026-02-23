@@ -1,0 +1,159 @@
+🚀 Cyber Security Beginner Roadmap on TryHackMe
+
+If you're new to cyber security and using TryHackMe, this step-by-step path will help you build strong fundamentals without getting overwhelmed.
+
+🎯 Step 1 — Understand the Basics First
+
+Before touching advanced hacking labs, focus on fundamentals.
+
+✅ Start With These Rooms
+
+Pre Security Learning Path
+
+Introduction to Cyber Security
+
+Network Fundamentals
+
+How The Web Works
+
+Linux Fundamentals Part 1–3
+
+Goal:
+Understand:
+
+What hacking is (ethically)
+
+Basic networking
+
+Linux command line
+
+How websites function
+
+⚠️ Many beginners skip this — don’t.
+
+🧠 Step 2 — Build Core Technical Skills
+
+Once basics are clear, move to hands-on technical rooms.
+
+✅ Recommended Rooms
+
+Nmap
+
+Web Scanning
+
+Burp Suite Basics
+
+OWASP Top 10
+
+Metasploit Introduction
+
+You should learn:
+
+Port scanning
+
+Service enumeration
+
+Web vulnerabilities
+
+Basic exploitation
+
+💡 Tip: Always take notes while doing rooms.
+
+🔍 Step 3 — Practice Enumeration (VERY IMPORTANT)
+
+Good hackers are good enumerators.
+
+🔥 Must-Practice Rooms
+
+Network Services
+
+Network Services 2
+
+Nmap Live Host Discovery
+
+SMB Enumeration
+
+Focus on mastering commands like:
+
+nmap -sC -sV -oN scan.txt <target>
+gobuster dir -u http://<target> -w wordlist.txt
+enum4linux -a <target>
+
+
+🎯 Your mindset should be:
+
+"Enumerate first, exploit later."
+
+💻 Step 4 — Start Beginner CTF-Style Machines
+
+Now you’re ready for real practice.
+
+✅ Good Beginner Rooms
+
+Basic Pentesting
+
+Pickle Rick
+
+Kenobi
+
+RootMe
+
+Bounty Hacker
+
+What you practice here:
+
+Full attack chain
+
+Privilege escalation
+
+Realistic scenarios
+
+⏱️ Take your time — don’t rush walkthroughs.
+
+🔴 Step 5 — Move Into Junior Penetration Tester Path
+
+After completing beginner rooms:
+
+👉 Start the Junior Penetration Tester learning path.
+
+This path teaches:
+
+Web exploitation
+
+Network exploitation
+
+Privilege escalation
+
+Tool usage in depth
+
+This is where real skill starts forming.
+
+🧪 Step 6 — Practice Daily (Consistency > Talent)
+Recommended Routine
+
+🕐 1 room per day OR
+
+🕐 1 machine every 2–3 days
+
+📝 Write notes for every room
+
+🔁 Repeat tools until commands become muscle memory
+
+🧰 Essential Tools Every Beginner Must Know
+
+Focus on mastering these early:
+
+Nmap
+
+Gobuster
+
+Burp Suite
+
+Metasploit
+
+Netcat
+
+LinPEAS / WinPEAS
+
+You don’t need 50 tools.
+You need to use the core tools very well.

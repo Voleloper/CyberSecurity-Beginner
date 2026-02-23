@@ -1,0 +1,106 @@
+Cybersecurity Certification Roadmap (2024-2025)
+
+This roadmap is designed to take you from a beginner to an expert level, focusing on the most recognized and ROI-effective (Return on Investment) certifications in the global market.
+
+Phase 1: The Foundation (0-2 Years Experience)
+
+These certifications get you past HR filters for entry-level roles like SOC Analyst Tier 1 or Junior Admin.
+
+** 1. CompTIA Security+ (SY0-701)
+
+Status: The Industry Standard.
+
+Why: It is globally recognized and often the minimum requirement for cybersecurity jobs. It covers the 6 main domains: Threats/Attacks, Architecture, Implementation, Operations, and Governance.
+
+Role: Entry-level Security Specialist / SOC Analyst.
+
+** 2. CompTIA Network+ (or Cisco CCNA)
+
+Status: Essential Networking Knowledge.
+
+Why: You cannot protect a network you don't understand. CCNA is more technical and valued if you will work with Cisco hardware.
+
+Role: Network Security Support.
+
+Phase 2: Specialization (2-4 Years Experience)
+
+Choose your path: Defense (Blue Team) or Offense (Red Team).
+
+Option A: Blue Team (Defensive & Analysis)
+
+** 3. CompTIA CySA+ (Cybersecurity Analyst)
+
+Focus: Threat detection, log analysis, and incident response. It is highly valued for SOC Tier 2 roles.
+
+** 4. BTL1 (Blue Team Level 1)
+
+Focus: 100% practical. It proves you can actually use tools like Splunk, Wireshark, and Autopsy in a real incident.
+
+Option B: Red Team (Offensive & Pentesting)
+
+** 5. CEH (Certified Ethical Hacker - EC-Council)
+
+Focus: Vulnerability assessment and hacking tools.
+
+Reality: While criticized by technical experts for being "too theoretical," it remains a top requirement in HR job descriptions and government contracts.
+
+** 6. eJPT (eLearnSecurity Junior Penetration Tester)
+
+Focus: A practical, entry-level pentesting exam. Great for building real hacking skills.
+
+Phase 3: The "Gold Standard" Technical Level
+
+At this stage, you are proving you have deep technical "hands-on" expertise.
+
+** 7. OSCP+ (Offensive Security Certified Professional)
+
+Status: The "Holy Grail" for Pentesters.
+
+Challenge: A grueling 24-hour exam where you must hack multiple machines and write a professional report.
+
+Value: Having OSCP on your CV almost guarantees a technical interview for Pentesting roles.
+
+Phase 4: Management & Senior Leadership (5+ Years Experience)
+
+For those moving into Senior, Lead, or C-Level (CISO) positions.
+
+** 8. CISSP (Certified Information Systems Security Professional)
+
+Status: The most prestigious certification in the world.
+
+Focus: High-level security management, risk, and policy.
+
+Requirement: Requires 5 years of verifiable work experience in at least 2 of the 8 CISSP domains.
+
+** 9. CISM (Certified Information Security Manager)
+
+Focus: Specifically for those who want to manage security teams and align security with business goals.
+
+Phase 5: Cloud Security (The Future)
+
+As most companies migrate to the cloud, these are becoming mandatory.
+
+AWS Certified Security – Specialty (If the company uses Amazon Web Services).
+
+Microsoft Azure Security Engineer (AZ-500) (If the company uses Azure).
+
+CCSK (Certificate of Cloud Security Knowledge) (Vendor-neutral foundation).
+
+
+
+
+Recommended Order (The "Success Path"):
+
+Network+ (If you are new to networking)
+
+Security+ (To get your first job)
+
+CySA+ (To move to a mid-level analyst role)
+
+CEH (To bypass HR filters for offensive roles)
+
+OSCP (To prove you are a high-level technical expert)
+
+CISSP (To reach the top of your career as a Director/CISO)
+
+CPTS (HACKTHEBOX)

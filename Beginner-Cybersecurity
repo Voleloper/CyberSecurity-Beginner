@@ -1,0 +1,188 @@
+# 🐧 Linux & Cyber Security – Beginner Guide
+
+This repository is a beginner-friendly guide to learning Linux from a cyber security perspective.
+
+Goal:  
+Learn Linux from scratch and understand how it is used in real-world security.
+
+This guide is written for people with **no prior Linux experience**.  
+It is technical, but easy to follow.
+
+---
+
+## 🎯 Why Learn Linux for Cyber Security?
+
+Linux is the foundation of modern cyber security.
+
+Penetration testing, server administration, log analysis, network inspection —  
+most real security work happens on Linux systems.
+
+Learning Linux helps you:
+
+- master the terminal
+- understand how operating systems work
+- develop an attacker mindset
+- automate tasks
+- think like a security engineer
+
+You cannot become strong in cyber security without Linux.
+
+---
+
+## 🧠 Beginner Learning Goals
+
+This repository aims to help you:
+
+✅ Use the terminal confidently  
+✅ Understand the Linux file system  
+✅ Learn the permission model  
+✅ Monitor running processes  
+✅ Use basic networking tools  
+✅ Write simple automation scripts  
+
+---
+
+## 📂 Understanding the Linux File System
+
+In Linux, everything is a file.
+
+Important directories:
+
+```
+/home     → user files
+/etc      → system configuration
+/var/log  → log files
+/tmp      → temporary files
+/root     → admin directory
+/bin      → essential commands
+```
+
+Understanding this structure = understanding the system.
+
+---
+
+## ⚡ Essential Terminal Commands
+
+### File Operations
+
+```
+pwd        → show current directory
+ls         → list files
+cd         → change directory
+mkdir      → create folder
+rm         → delete file
+cp         → copy file
+mv         → move/rename file
+```
+
+---
+
+### Reading Files
+
+```
+cat file.txt
+less file.txt
+head file.txt
+tail file.txt
+```
+
+These are heavily used in log analysis.
+
+---
+
+### Permission System
+
+```
+ls -l
+chmod 755 file
+chown user file
+sudo command
+```
+
+Linux security is built around permissions.
+
+---
+
+### User Information
+
+```
+whoami
+id
+groups
+sudo -l
+```
+
+Critical for understanding privilege escalation.
+
+---
+
+### Process Monitoring
+
+```
+ps aux
+top
+htop
+kill <pid>
+```
+
+Seeing what runs on a system is a key security skill.
+
+---
+
+### Networking Commands
+
+```
+ip a
+ping <ip>
+netstat -tulnp
+ss -tulnp
+tcpdump
+```
+
+You cannot understand hacking without networking.
+
+---
+
+## 🔍 Beginner Security Tools
+
+Starter tools for learning:
+
+```
+nmap        → port scanning
+nikto       → web vulnerability scanning
+hydra       → brute force testing
+gobuster    → directory discovery
+wireshark   → network analysis
+```
+
+The goal is not memorizing tools —  
+the goal is understanding what they do.
+
+---
+
+## 🧪 Practice Environment
+
+The best way to learn is hands-on.
+
+Recommended setup:
+
+- install a virtual machine
+- install a Linux distribution
+- create test environments
+- solve labs and CTF challenges
+
+You don’t learn security by reading.  
+You learn by doing.
+
+---
+
+## 🧠 Learning Strategy
+
+1. Don’t memorize commands → use them
+2. Break things → fix them
+3. Read logs
+4. Explore the system
+5. Stay in the terminal
+
+Learning Linux is like building muscle.  
+Repetition creates

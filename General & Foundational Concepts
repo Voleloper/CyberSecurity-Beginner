@@ -1,0 +1,169 @@
+1. General & Foundational Concepts (Temel Kavramlar)
+
+Bu sorular, siber güvenlik anlayışının temelini ölçmek için sorulur.
+
+** Q1: Explain the CIA Triad. Why is it important?
+A: The CIA Triad is the fundamental model for information security organization.
+
+Confidentiality: Ensuring that data is accessed only by authorized personnel (e.g., Encryption, MFA).
+
+Integrity: Ensuring that data has not been tampered with or altered (e.g., Hashing, File Integrity Monitoring).
+
+Availability: Ensuring that systems and data are accessible when needed (e.g., Redundancy, DDoS protection).
+It is important because every security control or policy ultimately maps back to one of these three principles.
+
+** Q2: What is the difference between Vulnerability, Threat, and Risk?
+A:
+
+Vulnerability: A weakness or gap in a security program that can be exploited (e.g., an unpatched server).
+
+Threat: A potential event or actor that can exploit a vulnerability (e.g., a hacker or malware).
+
+Risk: The potential for loss or damage when a threat exploits a vulnerability. Formula: Risk=Threat×Vulnerability×AssetValue.
+
+** Q3: How do you stay updated with the latest cybersecurity news and trends?
+(Note: This is a critical behavioral question.)
+A: I follow trusted sources like The Hacker News, Krebs on Security, and BleepingComputer. I also check CVE databases regularly, follow key security researchers on Twitter/X, and listen to podcasts like Darknet Diaries. Recently, I've been reading about [Mention a recent topic, e.g., AI-driven phishing or a specific ransomware group].
+
+2. Network Security (Ağ Güvenliği)
+
+Ağ temelleri siber güvenliğin belkemiğidir.
+
+** Q4: Explain the TCP 3-Way Handshake.
+A: It is the process used to establish a connection between a client and a server over a TCP/IP network.
+
+SYN: The client sends a packet with the SYN (Synchronize) flag set to initiate a connection.
+
+SYN-ACK: The server acknowledges the packet and responds with a SYN-ACK flag.
+
+ACK: The client sends an ACK packet to confirm the connection is established.
+
+** Q5: What is the difference between IDS and IPS?
+A:
+
+IDS (Intrusion Detection System): Monitors network traffic for suspicious activity and sends alerts. It is passive and does not stop the attack.
+
+IPS (Intrusion Prevention System): sits in-line with traffic, monitors for suspicious activity, and can actively block or drop packets to prevent the attack.
+
+** Q6: What is a DDoS attack and how can you mitigate it?
+A: A Distributed Denial of Service (DDoS) attack overwhelms a target server or network with a flood of traffic from multiple compromised sources (botnet) to make it unavailable.
+Mitigation:
+
+Implementing Rate Limiting.
+
+Using a WAF (Web Application Firewall).
+
+Using Content Delivery Networks (CDNs) like Cloudflare or Akamai to absorb traffic.
+
+Blackhole routing (dropping traffic at the ISP level).
+
+3. Web Application Security (Uygulama Güvenliği)
+
+Genellikle OWASP Top 10 üzerinden gidilir.
+
+** Q7: What is SQL Injection (SQLi) and how do you prevent it?
+A: SQLi occurs when an attacker interferes with the queries an application makes to its database, allowing them to view or modify data.
+Prevention:
+
+Primary Defense: Use Prepared Statements (Parameterized Queries). This ensures the database treats user input as data, not executable code.
+
+Input Validation and Sanitization.
+
+Principle of Least Privilege for database accounts.
+
+** Q8: Explain Cross-Site Scripting (XSS).
+A: XSS allows an attacker to inject malicious scripts (usually JavaScript) into web pages viewed by other users.
+
+Stored XSS: The script is permanently stored on the target server (e.g., in a forum post).
+
+Reflected XSS: The script is reflected off the web server, usually via a malicious link.
+
+DOM-based XSS: The vulnerability exists in the client-side code rather than the server-side code.
+
+** Q9: What is the difference between XSS and CSRF?
+A:
+
+XSS (Cross-Site Scripting): The attacker runs their script on the victim's browser to steal cookies or session tokens. (Focus: Stealing data/access).
+
+CSRF (Cross-Site Request Forgery): The attacker tricks the victim into performing an unwanted action on a web application where they are currently authenticated (e.g., changing a password or transferring money). (Focus: Forcing an action).
+
+4. Incident Response & Malware Analysis (Olay Müdahale)
+
+Blue Team rolleri için kritik bölümdür.
+
+** Q10: What are the phases of Incident Response (according to NIST)?
+A:
+
+Preparation: Training, tools, and policy creation.
+
+Detection & Analysis: Monitoring logs, identifying the incident, and determining scope.
+
+Containment, Eradication, & Recovery: Stopping the spread (disconnecting from network), removing the threat (re-imaging), and restoring services.
+
+Post-Incident Activity: Lessons learned and report writing to improve future response.
+
+** Q11: You discover a compromised workstation on the corporate network. What is your immediate reaction?
+A:
+
+Isolate: Immediately disconnect the machine from the network (physically or logically) to prevent lateral movement.
+
+Preserve Evidence: Do not shut down the machine if possible, to preserve RAM artifacts.
+
+Triage: Analyze logs to understand the entry point and scope.
+
+Report: Escalate to the Incident Response Lead or Management.
+
+** Q12: How does Ransomware work and what is the best defense against it?
+A: Ransomware encrypts the victim's files and demands payment for the decryption key.
+Best Defense:
+
+Backups: Regular, offline (air-gapped) backups are the only 100% guarantee recovery method.
+
+Endpoint Protection: EDR (Endpoint Detection and Response) solutions.
+
+User Awareness: Training users to recognize phishing emails (the most common delivery method).
+
+5. Cryptography (Kriptografi)
+
+** Q13: What is the difference between Symmetric and Asymmetric encryption?
+A:
+
+Symmetric Encryption: Uses a single key for both encryption and decryption. It is faster but requires secure key exchange (e.g., AES).
+
+Asymmetric Encryption: Uses a pair of keys (Public and Private). The public key encrypts, and the private key decrypts. It is slower but solves the key exchange problem (e.g., RSA, ECC).
+
+** Q14: What is Hashing and how is it different from Encryption?
+A:
+
+Hashing: A one-way function that converts data into a fixed-size string (digest). It cannot be reversed. Used for integrity checks and password storage (e.g., SHA-256).
+
+Encryption: A two-way function intended to be reversed (decrypted) with a key. Used for confidentiality.
+
+** Q15: Why should you salt passwords before hashing them?
+A: Salting involves adding a random string of characters to the password before hashing. This defends against Rainbow Table attacks (pre-computed hash tables) by making every password hash unique, even if two users have the same password.
+
+6. Scenario & "Think Like a Hacker" (Senaryo Soruları)
+
+** Q16: If you had to secure a coffee shop's public Wi-Fi, what would you do?
+A:
+
+Isolate the guest network from the internal business network (VLANs).
+
+Enable Client Isolation (AP Isolation) so devices cannot communicate with each other.
+
+Use WPA3 if supported, or WPA2 with strong passwords.
+
+Implement a Captive Portal with Terms of Service.
+
+Change default router admin credentials.
+
+** Q17: I type 'https://www.google.com/search?q=google.com' into my browser and hit enter. Describe what happens from a security perspective.
+A: (Recruiters love this because it tests full-stack knowledge)
+
+DNS Resolution: The browser checks cache, then queries DNS servers. (Security risk: DNS Spoofing).
+
+TCP Handshake: Connection established.
+
+TLS Handshake: The browser validates Google's SSL/TLS certificate to ensure authenticity and negotiates encryption keys. (Prevents Man-in-the-Middle attacks).
+
+HTTP Request/Response: Encrypted data is transferred.

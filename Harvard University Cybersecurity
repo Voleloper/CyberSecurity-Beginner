@@ -1,0 +1,104 @@
+# 🎓 CS50 — Introduction to Cybersecurity (Progress Tracker)
+
+Track your progress while studying the playlist.
+
+---
+
+## ▶️ Introduction
+- [ ] Watch lecture  
+https://www.youtube.com/watch?v=kmJlnUfMd7I&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=1
+
+**🧠 Study Topics**
+- [ ] What is cybersecurity  
+- [ ] Threat landscape overview  
+- [ ] Attack vs defense mindset  
+- [ ] CIA triad basics  
+- [ ] Risk management fundamentals  
+- [ ] Course roadmap understanding  
+
+---
+
+## 🔐 Lecture 0 — Securing Accounts
+- [ ] Watch lecture  
+https://www.youtube.com/watch?v=kUovJpWqEMk&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=2
+
+**🧠 Study Topics**
+- [ ] Password attacks (brute force, dictionary)  
+- [ ] Credential stuffing  
+- [ ] Phishing & social engineering  
+- [ ] Keylogging threats  
+- [ ] Multi-Factor Authentication (MFA)  
+- [ ] One-Time Passwords (OTP)  
+- [ ] Single Sign-On (SSO)  
+- [ ] Password managers  
+- [ ] Passkeys  
+
+---
+
+## 🔒 Lecture 1 — Securing Data
+- [ ] Watch lecture  
+https://www.youtube.com/watch?v=X3DVaMnl5n8&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=3
+
+**🧠 Study Topics**
+- [ ] Hashing vs encryption  
+- [ ] Secret-key cryptography  
+- [ ] Public-key cryptography  
+- [ ] Digital signatures  
+- [ ] Encryption in transit (TLS/HTTPS)  
+- [ ] Encryption at rest  
+- [ ] Secure deletion  
+- [ ] Ransomware basics  
+- [ ] Intro to quantum risks  
+
+---
+
+## 🖥️ Lecture 2 — Securing Systems
+- [ ] Watch lecture  
+https://www.youtube.com/watch?v=9phdZjF8qOk&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=4
+
+**🧠 Study Topics**
+- [ ] Malware types (virus, worm, botnet)  
+- [ ] Firewalls  
+- [ ] Automatic updates & patching  
+- [ ] Port scanning fundamentals  
+- [ ] Intrusion detection basics  
+- [ ] Principle of least privilege  
+- [ ] Virtual machines & sandboxing  
+- [ ] System hardening basics  
+
+---
+
+## 💻 Lecture 3 — Securing Software
+- [ ] Watch lecture  
+https://www.youtube.com/watch?v=Iu4rP8o7Xkw&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=5
+
+**🧠 Study Topics**
+- [ ] Secure coding principles  
+- [ ] Input validation  
+- [ ] Buffer overflow basics  
+- [ ] SQL injection  
+- [ ] Cross-Site Scripting (XSS)  
+- [ ] Dependency vulnerabilities  
+- [ ] Code review mindset  
+- [ ] Software supply chain risks  
+
+---
+
+## 🕵️ Lecture 4 — Preserving Privacy
+- [ ] Watch lecture  
+https://www.youtube.com/watch?v=9HOpanT0GRs&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=6
+
+**🧠 Study Topics**
+- [ ] Cookies & web tracking  
+- [ ] Incognito mode myths  
+- [ ] Metadata risks  
+- [ ] Anonymization vs pseudonymization  
+- [ ] VPN fundamentals  
+- [ ] Tor basics  
+- [ ] De-identification  
+- [ ] Privacy trade-offs  
+- [ ] Personal privacy hygiene  
+
+---
+
+✅ **Tip:** Mark topics as you master them and commit regularly.

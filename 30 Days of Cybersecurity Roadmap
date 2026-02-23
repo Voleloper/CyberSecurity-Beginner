@@ -1,0 +1,121 @@
+# 🛡️ 30 Days of Cybersecurity Roadmap
+
+> A disciplined, hands-on journey from zero to hero in cybersecurity basics.
+
+## 📌 About This Repository
+This repository documents my 30-day challenge to learn the fundamentals of cybersecurity. The goal is to build a strong foundation in Linux, Networking, Scripting,
+and Web Security through daily practice and labs.
+
+---
+
+## 📅 Week 1: Building the Foundation (Linux & Network)
+*Focus: Operating Systems, CLI, and how the Internet works.*
+
+- [ ] **Day 1: Lab Setup**
+  - Install VirtualBox/VMware.
+  - Install Kali Linux (or Parrot OS).
+  - Take a snapshot of the fresh install.
+- [ ] **Day 2: Linux CLI Basics**
+  - Commands: `cd`, `ls`, `pwd`, `cat`, `mkdir`, `rm`, `cp`, `mv`.
+  - Understanding File Permissions (`chmod`, `chown`).
+- [ ] **Day 3: Advanced Linux & Bash**
+  - Package Management (`apt`).
+  - Text Processing (`grep`, `awk`, `sed`, `|`, `>`).
+  - Process Management (`ps`, `top`, `kill`).
+- [ ] **Day 4: Network Fundamentals**
+  - OSI Model & TCP/IP Stack logic.
+  - IP Addressing, Subnetting, Public vs Private IPs.
+- [ ] **Day 5: Ports & Protocols**
+  - Common Ports: 21, 22, 53, 80, 443, 3306, 3389.
+  - **Lab:** Use Wireshark to analyze a TCP 3-Way Handshake.
+- [ ] **Day 6: DNS & HTTP**
+  - How DNS resolution works (A, CNAME, MX records).
+  - HTTP Methods (GET, POST) & Status Codes (200, 404, 500).
+- [ ] **Day 7: Weekly Review**
+  - Document everything learned in Markdown.
+  - Complete "Linux Fundamentals" on TryHackMe.
+
+---
+
+## 📅 Week 2: Scripting & Reconnaissance
+*Focus: Automating tasks and gathering information.*
+
+- [ ] **Day 8: Python 101**
+  - Variables, Loops, Conditionals, Functions.
+- [ ] **Day 9: Python for Security**
+  - **Project:** Write a simple Port Scanner using `socket`.
+  - **Project:** Write a script to fetch HTTP headers using `requests`.
+- [ ] **Day 10: Bash Scripting**
+  - Automate system updates.
+  - Write a simple Ping Sweeper script.
+- [ ] **Day 11: Passive Recon (OSINT)**
+  - Google Dorking (`site:`, `filetype:`).
+  - Tools: Shodan, Whois, TheHarvester.
+- [ ] **Day 12: Active Recon (Nmap)**
+  - Scanning types: `-sS`, `-sV`, `-O`.
+  - Using Nmap Scripting Engine (NSE).
+- [ ] **Day 13: Cryptography Basics**
+  - Hashing (MD5, SHA-256) vs Encryption.
+  - Symmetric vs Asymmetric Keys (Public/Private).
+- [ ] **Day 14: Coding Practice**
+  - Refine the Port Scanner tool.
+  - Complete "Nmap" room on TryHackMe.
+
+---
+
+## 📅 Week 3: Web Application Security
+*Focus: OWASP Top 10 and Web Vulnerabilities.*
+
+- [ ] **Day 15: Web Architecture & Tools**
+  - Setup Burp Suite & FoxyProxy.
+  - Intercept and modify a request.
+- [ ] **Day 16: OWASP Top 10**
+  - Read the documentation.
+  - Setup "OWASP Juice Shop" or "DVWA" (Docker).
+- [ ] **Day 17: SQL Injection (SQLi)**
+  - Understanding SQL logic (`' OR 1=1 --`).
+  - Manual exploitation on DVWA.
+- [ ] **Day 18: Cross-Site Scripting (XSS)**
+  - Reflected, Stored, and DOM XSS.
+  - PoC: `<script>alert(1)</script>`.
+- [ ] **Day 19: Authentication Attacks**
+  - Brute Force with Hydra.
+  - Cookie Manipulation & Session Hijacking.
+- [ ] **Day 20: Command Injection & File Upload**
+  - OS Command Injection logic.
+  - Uploading reverse shells.
+- [ ] **Day 21: CTF Practice (Web)**
+  - Start "OWASP Top 10" room on TryHackMe.
+  - Write a walkthrough for one challenge.
+
+---
+
+## 📅 Week 4: Advanced Techniques & Career
+*Focus: Exploitation, Post-Exploitation, and Documentation.*
+
+- [ ] **Day 22: Metasploit Framework**
+  - `msfconsole`, payloads (staged vs stageless).
+  - Meterpreter basics.
+- [ ] **Day 23: Privilege Escalation**
+  - Linux: SUID, Kernel exploits (LinPEAS).
+  - Windows: Basic concepts (WinPEAS).
+- [ ] **Day 24: Active Directory Basics**
+  - Domain Controllers, Users, Group Policy.
+  - Intro to Kerberoasting/SMB.
+- [ ] **Day 25: Blue Team Perspective**
+  - Analyzing Logs (`/var/log/auth.log`, Windows Event Viewer).
+  - Intro to SIEM (Splunk/Wazuh).
+- [ ] **Day 26: Full CTF Day**
+  - Complete a "Beginner" machine on TryHackMe or PicoCTF (Root it!).
+- [ ] **Day 27: Reporting**
+  - Write a professional Write-up for the CTF solved yesterday.
+  - Include screenshots and remediation steps.
+- [ ] **Day 28: GitHub Portfolio**
+  - Upload all scripts (Python/Bash) created.
+  - Polish this README file.
+- [ ] **Day 29: Career Path**
+  - Research Certifications: eJPT, Security+, OSCP.
+  - Follow security researchers on Twitter/LinkedIn.
+- [ ] **Day 30: Reflection**
+  - Review the 30-day journey.
+  - Decide the next specialization (Web, Pentest, SOC, Malware).
